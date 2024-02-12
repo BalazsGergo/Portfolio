@@ -1,0 +1,27 @@
+.Navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 400px;
+    border-right: 2px solid black;
+    height: 100vh;
+    justify-content:center;
+    gap: 70px;
+    background-color: #131515;
+    color: #faf9f9;
+    align-items: center;
+    position: relative;
+}
+
+.Navbar button {
+    color: #faf9f9;
+    background:none;
+    border:none;
+}
+
+.Navbar img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 35px;
+}
