@@ -6,15 +6,15 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Navbar() {
   return (
-    <div className="Navbar">
-       <h4>Balazs Gergo Frontend Developer</h4>
+    <div className="navbar">
+       <div className='icons'>
+       <button><FontAwesomeIcon icon={faGithub}/></button>
+       <button><FontAwesomeIcon icon={faLinkedin}/></button>
+       </div>
        <button>Home</button>
+       <button>About</button>
        <button>Tech</button>
        <button>Projects</button>
-
-       <FontAwesomeIcon icon={faGithub}/>
-       <FontAwesomeIcon icon={faLinkedin}/>
-   
     </div>
   )
 }

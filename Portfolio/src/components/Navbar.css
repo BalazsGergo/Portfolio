@@ -1,4 +1,4 @@
-.Navbar {
+.navbar {
     display: flex;
     width: 100vw;
     border-right: 2px solid black;
@@ -8,18 +8,24 @@
     color: #faf9f9;
     align-items:center;
     position: sticky;
-    gap: 70px;
+    gap: 100px;
     top: 0;
     z-index: 100;
+    border-bottom: 2px solid purple;
 }
 
-.Navbar button {
+.navbar button {
     color: #faf9f9;
     background:none;
     border:none;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.Navbar h4 {
-    position: absolute;
-    left: 15px;
+.icons {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  gap: 20px;
 }
+
