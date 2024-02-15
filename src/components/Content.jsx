@@ -1,6 +1,7 @@
-import './Content.css'
+
 import Home from './Home'
 import About from './About'
+import Skills from './Skills'
 
 function Content() {
   return (
@@ -8,6 +9,7 @@ function Content() {
     <div className='content'>
       <Home />
       <About />
+      <Skills />
     </div>
     
     </>
