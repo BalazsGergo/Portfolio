@@ -7,8 +7,12 @@ function Navbar() {
   return (
     <div className="navbar">
        <div className='icons'>
-       <button><FontAwesomeIcon icon={faGithub}/></button>
-       <button><FontAwesomeIcon icon={faLinkedin}/></button>
+        <a href="https://github.com/BalazsGergo">
+       <span className='icon'><FontAwesomeIcon icon={faGithub}/></span>
+       </a>
+       <a href="https://www.linkedin.com/in/gerg%C5%91-bal%C3%A1zs-9877012b1/">
+       <span className='icon'><FontAwesomeIcon icon={faLinkedin}/></span>
+       </a>
        </div>
        <button>Home</button>
        <button>About</button>

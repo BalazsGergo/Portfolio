@@ -1,7 +1,7 @@
-
 import Home from './Home'
 import About from './About'
 import Skills from './Skills'
+import Projects from './Projects'
 
 function Content() {
   return (
@@ -10,6 +10,7 @@ function Content() {
       <Home />
       <About />
       <Skills />
+      <Projects />
     </div>
     
     </>
