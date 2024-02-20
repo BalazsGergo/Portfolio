@@ -1,9 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 
 function Navbar() {
+ const [isOpen, setIsOpen] = useState(false)
+
+ const toggleMenu = () => {
+  setIsOpen(!isOpen)
+ }
+
+
   return (
     <div className="navbar">
        <div className='icons'>
@@ -18,6 +29,21 @@ function Navbar() {
        <button>About</button>
        <button>Skills</button>
        <button>Projects</button>
+
+       <div className="navbar-toggle" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
+      {isOpen ? <div className='toggle-menu'>
+      <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Skills</li>
+      <li>Projects</li>
+      </ul>
+       </div> : null}
     </div>
   )
 }
