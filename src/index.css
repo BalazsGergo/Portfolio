@@ -40,14 +40,18 @@ body::-webkit-scrollbar {
 .home p {
     text-transform: uppercase;
     text-align: center;
-    font-size: 34px;
+    font-size: 36px;
     letter-spacing: 2px;
+    opacity: 0; 
+    animation: fadeInUp 5s ease forwards;
 }
 
 .home {
     width: 100%;
     height: 100vh;
     margin-top: 150px;
+    text-align: center; /* Szöveg középre igazítása */
+    padding: 50px 0;
 }
 
 .navbar {
@@ -96,20 +100,20 @@ body::-webkit-scrollbar {
     background-color: #131515;
     border-radius: 5px;
     display: inline-block;
-  position: relative;
+    position: relative;
 }
 
 
-.icons a :hover {
+.icons a:hover {
     color: black;
     background-color: white;
-    transform: scale(1);
 }
 
 .icon {
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
 }
+
 
 
 .navbar-toggle {
@@ -192,5 +196,17 @@ ul {
       display: flex; 
       position: absolute;
       right: 15px;
+    }
+  }
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px); /* Felfelé elmozdítás */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Vissza az eredeti helyzetbe */
     }
   }
