@@ -25,7 +25,7 @@ function Skills() {
       <p>Hard Skills:</p>
       <ul>
         {hardSkills.map((skill, index) => ( <div key={index} className="skill">
-        <li><span>{skill}</span> <span>{React.createElement(skillIcons[skill])}</span></li>
+        <li><span>{React.createElement(skillIcons[skill])}</span> <p>{skill}</p> </li>
         </div>
         ))}
       </ul>
