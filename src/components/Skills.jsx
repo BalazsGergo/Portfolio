@@ -24,15 +24,15 @@ function Skills() {
       <div className="hardskills">
       <p>Hard Skills:</p>
       <ul>
-        {hardSkills.map((skill, index) => ( <div key={index} className="Skill">
+        {hardSkills.map((skill, index) => ( <div key={index} className="skill">
         <li><span>{skill}</span> <span>{React.createElement(skillIcons[skill])}</span></li>
         </div>
         ))}
       </ul>
       </div>
       <div className="softskills">
-      <ul>
         <p>Soft Skills:</p>
+      <ul>
         <li>TeamPlayer</li>
         <li>Time Management</li>
         <li>Willingness to Learn</li>
