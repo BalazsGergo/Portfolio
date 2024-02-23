@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #root {
     display: flex;
     flex-direction: column;
@@ -14,9 +18,6 @@
 body {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgb(2, 41, 79), rgb(9, 14, 16) 30%);
-    background-repeat: no-repeat;
-    color: white
 }
 
 body::-webkit-scrollbar {
@@ -25,6 +26,7 @@ body::-webkit-scrollbar {
 
 .content {
     width: 100vw;
+    height: 100%;
 }
 
 .home p {
@@ -40,7 +42,7 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 100vh;
     margin-top: 150px;
-    text-align: center; /* Szöveg középre igazítása */
+    text-align: center; 
     padding: 50px 0;
 }
 
@@ -130,7 +132,7 @@ body::-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    top: 80px;
+    top: 50px;
   }
 
   .toggle-menu li {
@@ -145,10 +147,9 @@ body::-webkit-scrollbar {
     background-color: rgb(2, 41, 79)
   }
 
-  .text img {
-    width: 250px;
-    max-width: 300px;
-    height: 300px;
+  .about img {
+    max-width: 100%;
+    max-height: 300px;
 }
 
 .about {
@@ -156,23 +157,21 @@ body::-webkit-scrollbar {
     height: 100vh;
     border-top: 1px solid #dee2e6;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    gap: 100px;
+    flex-wrap: wrap;
 }
 
-.text {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 20px 100px;
-  gap: 30px;
-}
+.about-text {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-left: 50px;
+  padding: 20px; 
+  width: 80%;
+  max-width: 700px;
 
-.about h2 {
-  position: absolute;
-  top: 70px;
 }
 
 
@@ -188,27 +187,33 @@ body::-webkit-scrollbar {
 .skills .hardskills {
     width: 50%;
     height: 100%;
-    border-right: 1px solid #dee2e6;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 150px;
+    gap: 80px;
 }
 
 .skills .softskills {
     width: 50%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
 }
 
 
-ul {
-  list-style-type: none;
-}
+
 .skill {
   display: inline-block;
   margin-right: 25px;
   text-align: center;
+  list-style-type: none;
+}
+ul {
+  list-style-type: square;
 }
 .skill p {
   font-size: 10px;
@@ -246,4 +251,14 @@ ul {
       opacity: 1;
       transform: translateY(0); /* Vissza az eredeti helyzetbe */
     }
+  }
+  
+
+ @media only screen and (max-width: 1070px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
   }

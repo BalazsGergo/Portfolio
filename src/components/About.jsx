@@ -4,10 +4,12 @@ function About() {
   return (
  
     <div className="about">
-        <h2>About Me</h2>
-          <div className="text">
             <img src="cat.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veritatis, voluptatibus impedit sint quam ducimus ex, animi recusandae eius incidunt eveniet magni rem repudiandae? Obcaecati molestias vitae laudantium sit suscipit!</p>
+          <div className="about-text">
+            <p>Hey there! My name is Balazs Gergo and I'm a passionate Frontend Developer based in Miskolc, Hungary. I discovered my love for coding during my journey at Codecool, where I dived deep into the world of frontend development.
+            I'm constantly expanding my skill set and staying up-to-date with the latest technologies and trends in the frontend ecosystem. Whether it's mastering the intricacies of React or diving into the world of responsive design, I'm always eager to learn and grow as a developer.
+            When I'm taking a break from coding, you'll find me gaming, fishing, or enjoying a board game
+            </p>
           </div>
     </div>
   )
