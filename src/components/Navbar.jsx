@@ -2,9 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 
 function Navbar() {
@@ -13,6 +11,8 @@ function Navbar() {
  const toggleMenu = () => {
   setIsOpen(!isOpen)
  }
+
+ const handleOpen = () => setIsOpen(false)
 
 
   return (
@@ -25,10 +25,10 @@ function Navbar() {
        <span className='icon'><FontAwesomeIcon icon={faLinkedin}/></span>
        </a>
        </div>
-       <button>Home</button>
-       <button>About</button>
-       <button>Skills</button>
-       <button>Projects</button>
+      <Link to="home" smooth={true} duration={200}>Home</Link>
+      <Link to="about" smooth={true} duration={200}>About</Link>
+      <Link to="skills" smooth={true} duration={200}>Skills</Link>
+      <Link to="projects" smooth={true} duration={200}>Projects</Link>
 
        <div className="navbar-toggle" onClick={toggleMenu}>
         <div className="bar"></div>
@@ -38,10 +38,10 @@ function Navbar() {
 
       {isOpen ? <div className='toggle-menu'>
       <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Skills</li>
-      <li>Projects</li>
+      <li><Link onClick={handleOpen} to="home" smooth={true} duration={200}>Home</Link></li>
+      <li><Link onClick={handleOpen} to="about" smooth={true} duration={200}>About</Link></li>
+      <li><Link onClick={handleOpen} to="skills" smooth={true} duration={200}>Skills</Link></li>
+      <li><Link onClick={handleOpen} to="projects" smooth={true} duration={200}>Projects</Link></li>
       </ul>
        </div> : null}
     </div>

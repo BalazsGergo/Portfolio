@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
   }
 
 .content {
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
@@ -34,22 +34,20 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     text-align: center;
     font-size: 36px;
-    letter-spacing: 2px;
-    opacity: 0; 
+    letter-spacing: 2px; 
     animation: fadeInUp 5s ease forwards;
 }
 
 .home {
     width: 100%;
     height: 100vh;
-    margin-top: 150px;
     text-align: center; 
-    padding: 50px 0;
+    padding: 200px 0;
 }
 
 .navbar {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     background-color: #131515;
     justify-content: center;
@@ -62,7 +60,7 @@ body::-webkit-scrollbar {
     border-bottom: 1px solid #dee2e6;
 }
 
-.navbar button {
+.navbar a {
     color: #faf9f9;
     background:none;
     border:none;
@@ -74,7 +72,7 @@ body::-webkit-scrollbar {
     border-radius: 5px;
 }
 
-.navbar button:hover {
+.navbar a:hover {
     background-color: rgb(2, 41, 79)
 }
 
@@ -156,7 +154,7 @@ body::-webkit-scrollbar {
 .about {
     width: 100%;
     height: 100vh;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #131515;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,8 +179,13 @@ body::-webkit-scrollbar {
     height: 50vh;
     display: flex;
     justify-content: center;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #131515;
     font-size: 24px;
+}
+
+.skills #main {
+  position: absolute;
+  top: 30px;
 }
 
 .skills .hardskills {
@@ -192,7 +195,8 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 80px;
+    position: relative;
+    gap: 20px;
 }
 
 .skills .softskills {
@@ -202,7 +206,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 80px;
+    position: relative;
 }
 
 
@@ -214,7 +218,7 @@ body::-webkit-scrollbar {
   list-style-type: none;
 }
 ul {
-  list-style-type: square;
+  list-style-type: none;
 }
 .skill p {
   font-size: 10px;
@@ -226,13 +230,18 @@ ul {
 .projects {
     width: 100%;
     height: 50vh;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #131515;
 }
 
 
 @media only screen and (max-width: 875px) {
-    .navbar button {
+    .navbar a {
       display: none; /* Menü alapértelmezett rejtése kisebb képernyőméretnél */
+    }
+   
+    .navbar .icons a {
+      display: inline-block;
+     font-size: 20px;
     }
   
     .navbar-toggle {
@@ -240,7 +249,13 @@ ul {
       position: absolute;
       right: 15px;
     }
+
+    .toggle-menu a {
+      display: block;
+    } 
   }
+
+
 
 
   @keyframes fadeInUp {
@@ -261,5 +276,10 @@ ul {
     flex-direction: column;
     gap: 0;
     padding: 0;
+    height: 100%;
+  }
+
+  .hardskills {
+    gap: 90px;
   }
   }
