@@ -1,13 +1,13 @@
 import React from "react";
 import { FaReact,FaGithub,FaHtml5,FaCss3Alt,FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript,IoLogoFirebase  } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 
 function Skills() {
   const hardSkills = ["HTML5","CSS3","Javascript","React","Github","Git","Firebase","TypeScript"]
 
   const skillIcons = {
-    TypeScript: SiTypescript,
+    TypeScript: BiLogoTypescript,
     Firebase: IoLogoFirebase,
     Git: FaGitAlt,
     Javascript: IoLogoJavascript,
@@ -24,7 +24,7 @@ function Skills() {
       <div className="hardskills">
       <p id="main">Hard Skills:</p>
       <ul>
-        {hardSkills.map((skill, index) => ( <div key={index} className="skill">
+        {hardSkills.map((skill, index) => ( <div key={index} id={`skill-${index}`} className="skill">
         <li><span>{React.createElement(skillIcons[skill])}</span> <p>{skill}</p> </li>
         </div>
         ))}

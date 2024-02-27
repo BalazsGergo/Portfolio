@@ -3,8 +3,8 @@
 function Home() {
   return (
     <div className='home'>
-        <p>gergo balazs</p>
-        <p>frontend developer</p>
+        <p id="name">gergo balazs</p>
+        <p>frontend <br /> developer</p>
     </div>
   )
 }
