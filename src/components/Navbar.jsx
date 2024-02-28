@@ -29,7 +29,8 @@ function Navbar() {
       <Link to="about" smooth={true} duration={200}>About</Link>
       <Link to="skills" smooth={true} duration={200}>Skills</Link>
       <Link to="projects" smooth={true} duration={200}>Projects</Link>
-      <button className='contact-btn'>Contact Me</button>
+      <a href="mailto:gergobalazs98@gmail.com">Contact</a>
+
 
        <div className="navbar-toggle" onClick={toggleMenu}>
         <div className="bar"></div>
@@ -43,6 +44,7 @@ function Navbar() {
       <li><Link onClick={handleOpen} to="about" smooth={true} duration={200}>About</Link></li>
       <li><Link onClick={handleOpen} to="skills" smooth={true} duration={200}>Skills</Link></li>
       <li><Link onClick={handleOpen} to="projects" smooth={true} duration={200}>Projects</Link></li>
+      <li><a href="mailto:gergobalazs98@gmail.com">Contact</a></li>
       </ul>
        </div> : null}
     </div>
