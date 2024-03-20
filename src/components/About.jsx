@@ -1,7 +1,12 @@
 function About() {
+  const handleView = () => {
+    window.open("","_blank")
+  }
+
+
   return (
     <div className="about">
-      <img src="cat.jpg" alt="img" />
+      <img src="Profilpic.JPG" alt="profile picture" />
       <div className="about-text">
         <p>
           Hey there! My name is Gergo Balazs and I'm a Frontend Developer based
@@ -14,6 +19,7 @@ function About() {
           grow as a developer. When I'm taking a break from coding, you'll find
           me playing computer games, fishing, or enjoying a board game.
         </p>
+        <button>View Resume</button>
       </div>
     </div>
   );
