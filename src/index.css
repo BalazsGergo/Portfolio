@@ -160,16 +160,43 @@ ul {
   line-height: 1.8;
   margin-left: 50px;
   padding: 20px;
+  padding-bottom: 70px;
   width: 80%;
   max-width: 700px;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
+
+#resume {
+  color: white;
+  width: fit-content;
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #3f37c9;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  bottom: 150px;
+}
+
+#resume:hover {
+  background-color: rgb(2, 41, 79);
+}
+
 
 .skills {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   font-size: 24px;
 }
@@ -190,11 +217,12 @@ ul {
   flex-direction: column;
   position: relative;
   gap: 20px;
-  padding-left: 20px;
+  
 }
 
 .hardskills ul {
   height: 200px;
+  padding-left: 30px;
 }
 
 .softskills {
@@ -206,7 +234,6 @@ ul {
   flex-direction: column;
   position: relative;
   gap: 20px;
-  padding-left: 20px;
 }
 .softskills li {
   font-size: 20px;
@@ -282,6 +309,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 
 .projects > h2 {
@@ -467,6 +495,12 @@ ul {
     font-size: 15px;
     padding: 7px;
   }
+  .about img {
+    max-width: 200px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  }
 }
 
 @media only screen and (max-width: 390px) {
@@ -475,5 +509,14 @@ ul {
   }
   #name {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1150px){
+  #resume {
+    position:absolute;
+    bottom: 0;
+    margin-top: 35px;
+    margin-right: 55px;
   }
 }

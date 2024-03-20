@@ -1,10 +1,11 @@
 function About() {
   const handleView = () => {
-    window.open("","_blank")
+    window.open("https://github.com/BalazsGergo/Portfolio/blob/main/BalazsGerg%C5%91.CV.pdf ","_blank")
   }
 
 
   return (
+    
     <div className="about">
       <img src="Profilpic.JPG" alt="profile picture" />
       <div className="about-text">
@@ -19,9 +20,10 @@ function About() {
           grow as a developer. When I'm taking a break from coding, you'll find
           me playing computer games, fishing, or enjoying a board game.
         </p>
-        <button>View Resume</button>
+          <button id="resume" onClick={handleView}>View Resume</button>
       </div>
     </div>
+          
   );
 }
 
