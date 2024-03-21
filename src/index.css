@@ -310,7 +310,6 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 
 .projects > h2 {
@@ -333,6 +332,10 @@ ul {
   align-items: center;
   border: 1px solid black;
   transition: transform 0.3s ease;
+}
+
+.projects > div:nth-child(2) {
+  margin-top: 40px;
 }
 
 .project #image-link {
@@ -380,7 +383,7 @@ ul {
 .footer {
   width: 100%;
   height: fit-content;
-  padding: 25px;
+  padding: 20px;
   background-color: #252422;
   color: #faf9f9;
   display: flex;
