@@ -1,6 +1,6 @@
 function About() {
   const handleView = () => {
-    window.open("https://github.com/BalazsGergo/Portfolio/blob/main/BalazsGerg%C5%91.CV.pdf ","_blank")
+    window.open("https://github.com/BalazsGergo/Portfolio/blob/main/public/BalazsGerg%C5%91.CV.pdf","_blank")
   }
 
 
