@@ -6,7 +6,7 @@ import {
   FaCss3Alt,
   FaGitAlt,
 } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
 
 function Skills() {
@@ -17,13 +17,11 @@ function Skills() {
     "React",
     "Github",
     "Git",
-    "Firebase",
     "TypeScript",
   ];
 
   const skillIcons = {
     TypeScript: BiLogoTypescript,
-    Firebase: IoLogoFirebase,
     Git: FaGitAlt,
     Javascript: IoLogoJavascript,
     CSS3: FaCss3Alt,
