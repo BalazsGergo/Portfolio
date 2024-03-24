@@ -173,9 +173,9 @@ ul {
 
 #resume {
   color: white;
-  width: fit-content;
+  width: 150px;
   align-self: center;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #3f37c9;
   transition: background-color 0.3s ease;
   border-radius: 5px;
@@ -203,14 +203,14 @@ ul {
 
 .main {
   position: absolute;
-  top: 0px;
+  top: 20px;
   text-decoration: underline;
   color: rgb(2, 41, 79);
 }
 
 .hardskills {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,7 +227,7 @@ ul {
 
 .softskills {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,7 +380,7 @@ ul {
 .footer {
   width: 100%;
   height: fit-content;
-  padding: 20px;
+  padding: 5px;
   background-color: #252422;
   color: #faf9f9;
   display: flex;
@@ -520,8 +520,6 @@ ul {
 @media only screen and (max-width: 1150px){
   #resume {
     position:absolute;
-    bottom: 0;
-    margin-top: 35px;
-    margin-right: 55px;
+    bottom: 10px;
   }
 }
