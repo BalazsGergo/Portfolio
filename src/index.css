@@ -203,7 +203,7 @@ ul {
 
 .main {
   position: absolute;
-  top: 20px;
+  top: 10px;
   text-decoration: underline;
   color: rgb(2, 41, 79);
 }
@@ -322,8 +322,8 @@ ul {
   width: 100%;
   max-height: 400px;
   background-color: white;
-  margin: 30px;
-  margin-bottom: 0;
+  margin-left: 30px;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,7 +386,6 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   gap: 5px;
 }
 
@@ -395,7 +394,7 @@ ul {
   text-decoration: none;
   border-radius: 5px;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #3f37c9;
   transition: background-color 0.3s ease;
 }
